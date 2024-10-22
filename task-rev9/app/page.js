@@ -34,7 +34,6 @@ const page = () => {
 
   const handleOrderPopup = () => {
     setOrderPopup(true);
-    console.log("hello");
   };
 
   useEffect(() => {
@@ -53,21 +52,20 @@ const page = () => {
     <TodoProvider
       value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
     >
-      <div className="flex justify-center items-center">
-        <div className="min-h-screen w-[750px] pt-10 bg-primary dark:bg-gray-900 dark:text-white">
-          <div className="w-full text-white">
-            <h1 className="text-2xl font-bold text-center mb-8 mt-2 text-black">
+      <div className="flex justify-center items-center w-full bg-primary text-black dark:bg-gray-900 dark:text-white">
+        <div className="min-h-screen md:w-[750px] pt-10 ">
+          <div className="w-full">
+            <h1 className="text-2xl font-bold text-center mb-8 mt-2 ">
               TODO LIST
             </h1>
             <div className="mb-4">
               <TodoForm />
             </div>
-            <div className="pt-[30px]">
+            <div className="py-[30px]">
               <Alltodos todos={todos} />
             </div>
-
-            <div className="relative w-full">
-              <div className="absolute  top-40 right-0">
+            <div className="relative">
+              <div className="fixed bottom-0 lg:right-80 right-2 pb-4">
                 <Addtodo handleOrderPopup={handleOrderPopup} />
               </div>
             </div>

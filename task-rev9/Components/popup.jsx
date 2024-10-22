@@ -17,7 +17,7 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
     <>
       {orderPopup && (
         <div className="fixed z-50 px-6">
-          <div className="fixed bg-primary dark:bg-gray-800 w-[500px] h-[289px] top-[118px] left-[440px] py-3 rounded-2xl ">
+          <div className="fixed bg-primary dark:bg-gray-800 lg:w-[500px] h-[289px] w-[250px] md:w-[250px] top-[123px] lg:left-[440px] md:left-[10px] py-3 rounded-2xl ">
             <div className="flex flex-col dark:text-white text-black px-2">
               <h1 className="text-center font-bold pb-4">NEW NOTE</h1>
               
@@ -29,7 +29,7 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
                   value={todo}
                   onChange={(e) => setTodo(e.target.value)}
                 />
-                <div className="flex justify-between pt-20">
+                <div className="flex justify-between pt-36">
                   <button
                     onClick={() => setOrderPopup(false)}
                     type="text"

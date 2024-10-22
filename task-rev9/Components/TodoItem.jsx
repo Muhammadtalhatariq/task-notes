@@ -21,11 +21,11 @@ const TodoItem = ({ todo }) => {
 
   return (
     <div
-      className={`flex border-b  px-3 py-1.5 gap-x-3 font-bold  text-black`}
+      className={`flex border-b  px-3 py-1.5 gap-x-3 font-bold`}
     >
       <input
         type="checkbox"
-        className="cursor-pointer text-black w-[26px] h-[26px]"
+        className="cursor-pointer w-[26px] h-[26px]"
         checked={todo.completed}
         onChange={toggleCompleted}
       />

@@ -1,9 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Darkmode from "./Darkmode";
 
 const TodoForm = () => {
-
 
   return (
     <>
@@ -13,7 +12,7 @@ const TodoForm = () => {
             <input
               type="text"
               placeholder="Search note..."
-              className="w-[595px] h-[38px] border border-blue-400 rounded-[5px] px-4 py-2 outline-none duration-150 text-black"
+              className="lg:w-[595px] w-[200px] h-[38px] border border-blue-400 rounded-[5px] px-4 py-2 outline-none duration-150 text-black"
             />
             <div className="absolute right-3 top-2">
               <img src="search.png" alt="icon" />
